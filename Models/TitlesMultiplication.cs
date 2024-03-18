@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DigitDestruction.Models
 {
-    class TitlesMultiplication
+    public class TitlesMultiplication
     {
         public static string MultiplicationPageTitle { get; } = "Welcome to Multiplication :)";
     }

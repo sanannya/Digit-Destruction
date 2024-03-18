@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DigitDestruction.ViewViewModels
+namespace DigitDestruction.ViewViewModels.Main.Addition
 {
     class AdditionViewModel: BaseViewModel
     {
