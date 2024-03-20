@@ -35,7 +35,7 @@ namespace DigitDestruction.Models.DataAccess
 
         public async Task<List<Problems>> GetProblems()
         {
-            await IntializeDatabase();
+            await InitializeDatabase();
 
             string sql = "SELECT * FROM Problem";
 

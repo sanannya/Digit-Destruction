@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using ColumnAttribute = SQLite.ColumnAttribute;
 
 namespace DigitDestruction.Models.Entities
 {

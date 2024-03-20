@@ -9,5 +9,6 @@ namespace DigitDestruction.Models
     public class TitlesAddition
     {
         public static string AdditionPageTitle { get; } = "Welcome to Addition :)";
+        public static string AddEntryResultsTitle { get; } = "here's your entries OwO";
     }
 }
