@@ -9,5 +9,6 @@ namespace DigitDestruction.Models
     public class TitlesMultiplication
     {
         public static string MultiplicationPageTitle { get; } = "Welcome to Multiplication :)";
+        public static string MultEntryResultsTitle { get; } = "here's your entries";
     }
 }

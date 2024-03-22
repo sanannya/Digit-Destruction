@@ -9,5 +9,6 @@ namespace DigitDestruction.Models
     public class TitlesDivision
     {
         public static string DivisionPageTitle { get; } = "Welcome to Division :)";
+        public static string DivEntryResultsTitle { get; } = "here's your entries";
     }
 }

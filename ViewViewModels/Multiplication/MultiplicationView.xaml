@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DigitDestruction.ViewViewModels.Main.Multiplication.MultiplicationView"
              Title="MultiplicationView">
-    <VerticalStackLayout>
+    <StackLayout VerticalOptions= "Center">
         <Label 
-            Text="multiplying rubber duckies"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    Text="multiplying rubber duckies"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" />
+        <Entry x:Name="EntryValue" Placeholder="Enter Text Here" PlaceholderColor="Blue"
+Text="{Binding EntryText}" TextColor="Crimson" WidthRequest="300" HorizontalOptions="Center" />
+        <BoxView HeightRequest="3" BackgroundColor="#000000" WidthRequest="300" />
+        <Button Text="Go To Results Page" HorizontalOptions="Center" FontAttributes="Bold,Italic" Margin="10" TextColor="White" BackgroundColor="Blue" Command="{Binding OnEntryClicked}" />
+
+    </StackLayout>
 </ContentPage>
