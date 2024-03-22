@@ -3,15 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DigitDestruction.ViewViewModels.Main.Division.DivisionView"
              Title="{Binding Title}">
+    
     <StackLayout VerticalOptions= "Center">
-        <Label 
-    Text="i'll divide your face"
-    VerticalOptions="Center" 
-    HorizontalOptions="Center" />
-        <Entry x:Name="EntryValue" Placeholder="Enter Text Here" PlaceholderColor="Blue"
-Text="{Binding EntryText}" TextColor="Crimson" WidthRequest="300" HorizontalOptions="Center" />
-        <BoxView HeightRequest="3" BackgroundColor="#000000" WidthRequest="300" />
-        <Button Text="Go To Results Page" HorizontalOptions="Center" FontAttributes="Bold,Italic" Margin="10" TextColor="White" BackgroundColor="Blue" Command="{Binding OnEntryClicked}" />
+        
+        <Label Text="i'll divide your face"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        
+        <Entry x:Name="EntryValue"
+               Placeholder="Enter Text Here" 
+               PlaceholderColor="Blue"
+               Text="{Binding EntryText}"
+               TextColor="Crimson" 
+               WidthRequest="300" 
+               HorizontalOptions="Center" />
+        
+        <BoxView HeightRequest="3"
+                 BackgroundColor="#000000" 
+                 WidthRequest="300" />
+        
+        <Button Text="Go To Results Page" 
+                HorizontalOptions="Center" 
+                FontAttributes="Bold,Italic" 
+                Margin="10" 
+                TextColor="White" 
+                BackgroundColor="Blue" 
+                Command="{Binding OnEntryClicked}" />
 
     </StackLayout>
+    
 </ContentPage>

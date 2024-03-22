@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DigitDestruction.ViewViewModels.Main.Multiplication.MultiplicationView"
              Title="MultiplicationView">
+    
     <StackLayout VerticalOptions= "Center">
         <Label 
     Text="multiplying rubber duckies"

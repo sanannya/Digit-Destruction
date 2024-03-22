@@ -7,4 +7,5 @@ public partial class AddEntryResultsView : ContentPage
 		InitializeComponent();
 		BindingContext = new AddEntryResultsViewModel(entryText);
 	}
+
 }

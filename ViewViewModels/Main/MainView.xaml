@@ -39,6 +39,6 @@
                     Text="{Binding TitleDivision}"
                     Command="{Binding OnClickedDivision}" />
         </Grid>
-
     </VerticalStackLayout>
+    
 </ContentPage>
