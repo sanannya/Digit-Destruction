@@ -10,11 +10,14 @@
         </Style>
     </ContentPage.Resources>
 
-    <VerticalStackLayout VerticalOptions="Start">
-        <Grid Margin =" 25, 35, 20, 20">
+    <VerticalStackLayout VerticalOptions="FillAndExpand" BackgroundColor="black">
+        
+        <Image Source="{Binding GetEmbImageSource}" Aspect="AspectFill" WidthRequest="400" />
+        
+        <Grid Margin =" 25, 35, 20, 20" >
             <Grid.RowDefinitions>
-                <RowDefinition Height= "75"/>
-                <RowDefinition Height= "75"/>
+                <RowDefinition Height= "150"/>
+                <RowDefinition Height= "150"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -25,19 +28,23 @@
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Text="{Binding TitleAddition}"
-                    Command="{Binding OnClickedAddition}" />
+                    Command="{Binding OnClickedAddition}" 
+                    BackgroundColor="DarkRed" />
             <Button Grid.Row="0"
                     Grid.Column="1"
                     Text="{Binding TitleSubtraction}"
-                    Command="{Binding OnClickedSubtraction}"/>
+                    Command="{Binding OnClickedSubtraction}"
+                    BackgroundColor="DarkRed"/>
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Text="{Binding TitleMultiplication}"
-                    Command="{Binding OnClickedMultiplication}" />
+                    Command="{Binding OnClickedMultiplication}" 
+                    BackgroundColor="DarkRed" />
             <Button Grid.Row="1"
                     Grid.Column="1"
                     Text="{Binding TitleDivision}"
-                    Command="{Binding OnClickedDivision}" />
+                    Command="{Binding OnClickedDivision}" 
+                    BackgroundColor="DarkRed" />
         </Grid>
     </VerticalStackLayout>
     

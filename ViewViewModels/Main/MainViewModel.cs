@@ -36,6 +36,15 @@ namespace DigitDestruction.ViewViewModels.Main
             OnClickedDivision = new Command(OnClickedAsyncDivision);
         }
 
+        public ImageSource GetEmbImageSource
+        {
+            get
+            {
+                return ImageSource.FromFile("Images/logo.PNG");
+
+            }
+        }
+
         private async void OnClickedAsyncAddition()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new AdditionView());
