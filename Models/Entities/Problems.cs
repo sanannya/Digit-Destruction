@@ -13,6 +13,9 @@ namespace DigitDestruction.Models.Entities
     {
         [PrimaryKey, AutoIncrement, Column("ProblemType")]
         public string ProblemType { get; set; }
+        public int Digit1 { get; set; }
+        public string Operation { get; set; }
+        public int Digit2 { get; set; } 
 
     }
 }

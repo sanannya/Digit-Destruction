@@ -45,5 +45,13 @@ namespace DigitDestruction.ViewViewModels.Main.Subtraction
 
             await Application.Current.MainPage.Navigation.PushAsync(new SubEntryResultsView(_entryText));
         }
+        public ImageSource GetEmbImageSource
+        {
+            get
+            {
+                return ImageSource.FromFile("Images/logo.PNG");
+
+            }
+        }
     }
 }

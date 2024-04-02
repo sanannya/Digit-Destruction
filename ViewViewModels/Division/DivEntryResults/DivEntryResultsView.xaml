@@ -3,13 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DigitDestruction.ViewViewModels.Division.DivEntryResults.DivEntryResultsView"
              Title="DivEntryResultsView">
-    
-    <StackLayout VerticalOptions="Center">
-        
+
+    <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="black">
+
+        <Image Source="{Binding GetEmbImageSource}" Aspect="AspectFill" WidthRequest="400" />
+
         <Label Text="Result From Entry Page" 
                FontSize="Title" 
                FontAttributes="Bold"
-               TextColor="Blue" 
+               TextColor="white" 
                HorizontalOptions="Center" />
 
         <BoxView HeightRequest="3" 

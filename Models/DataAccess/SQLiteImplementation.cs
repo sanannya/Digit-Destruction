@@ -44,7 +44,19 @@ namespace DigitDestruction.Models.DataAccess
             return problems;
         }
 
-        //public async Task<bool> SaveProblems(Problems problems)
+        public async Task<bool> CreateProblems(Problems problems)
+        {
+            bool res = false;
 
+            try
+            {
+                await InitializeDatabase();
+
+                //var existingProblem = await con.Table<Problems>()
+                    //.Where(p => p.)
+            }
+            
+        }
+        
     }
 }

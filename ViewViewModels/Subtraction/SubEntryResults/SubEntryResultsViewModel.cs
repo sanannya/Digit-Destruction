@@ -31,5 +31,13 @@ namespace DigitDestruction.ViewViewModels.Subtraction.SubEntryResults
                     SetProperty(ref _entryText, value);
             }
         }
+        public ImageSource GetEmbImageSource
+        {
+            get
+            {
+                return ImageSource.FromFile("Images/logo.PNG");
+
+            }
+        }
     }
 }

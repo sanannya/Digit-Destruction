@@ -44,5 +44,14 @@ namespace DigitDestruction.ViewViewModels.Main.Addition
 
             await Application.Current.MainPage.Navigation.PushAsync(new AddEntryResultsView(_entryText));
         }
+
+        public ImageSource GetEmbImageSource
+        {
+            get
+            {
+                return ImageSource.FromFile("Images/logo.PNG");
+
+            }
+        }
     }
 }
