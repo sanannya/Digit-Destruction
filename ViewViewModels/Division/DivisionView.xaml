@@ -20,7 +20,39 @@
                TextColor="white" 
                WidthRequest="300" 
                HorizontalOptions="Center" />
-        
+
+        <Entry x:Name="EntryValue"
+               Placeholder="Enter Text Here" 
+               PlaceholderColor="white"
+               Text="{Binding EntryText}"
+               TextColor="white" 
+               WidthRequest="300" 
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="EntryValue"
+               Placeholder="Enter Text Here" 
+               PlaceholderColor="white"
+       Text="{Binding EntryText}"
+       TextColor="white" 
+       WidthRequest="300" 
+       HorizontalOptions="Center" />
+
+        <Entry x:Name="EntryValue"
+       Placeholder="Enter Text Here" 
+       PlaceholderColor="white"
+       Text="{Binding EntryText}"
+       TextColor="white" 
+       WidthRequest="300" 
+       HorizontalOptions="Center" />
+
+        <Entry x:Name="EntryValue"
+       Placeholder="Enter Text Here" 
+       PlaceholderColor="white"
+       Text="{Binding EntryText}"
+       TextColor="white" 
+       WidthRequest="300" 
+       HorizontalOptions="Center" />
+
         <BoxView HeightRequest="3"
                  BackgroundColor="#000000" 
                  WidthRequest="300" />
