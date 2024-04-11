@@ -9,9 +9,14 @@ using ColumnAttribute = SQLite.ColumnAttribute;
 
 namespace DigitDestruction.Models.Entities
 {
+    [SQLite.Table("problems")]
     public class Problems
     {
-         
+        [PrimaryKey, AutoIncrement, Column("index")]
+        public int probNum { get; set; }
+
+        [MaxLength(100), Unique]
+        public string problemQ { get; set; }
 
     }
 }
