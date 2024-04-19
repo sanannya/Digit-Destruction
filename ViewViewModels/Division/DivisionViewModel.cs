@@ -1,7 +1,9 @@
 ﻿using DigitDestruction.Models;
+using DigitDestruction.Models.Entities;
 using DigitDestruction.ViewViewModels.Division.DivEntryResults;
 using MyFirstMobileApp.ViewModels;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,9 @@ namespace DigitDestruction.ViewViewModels.Main.Division
         public ICommand OnEntryClicked { get; }
 
         private string _entryText;
+
+        private string _divProb;
+
         public DivisionViewModel()
         {
             Title = TitlesDivision.DivisionPageTitle;
@@ -52,6 +57,20 @@ namespace DigitDestruction.ViewViewModels.Main.Division
             {
                 return ImageSource.FromFile("Images/logo.PNG");
 
+            }
+        }
+
+        public string DivProb
+        {
+            get
+            {
+                return _divProb;
+            }
+            set
+            {
+                var random = new Random();
+                int index = random.Next(Problems.GetDivProbs().Count);
+                string _divProb = Problems.GetDivProbs()[index].getProbText;
             }
         }
     }

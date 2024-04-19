@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 using DigitDestruction.Models.Entities;
 using Microsoft.Maui.Storage;
 using SQLite;
-using Windows.System;
 
 namespace DigitDestruction.Models.DataAccess
 {
-    public class SQLiteConnection
+    public class SQLiteDatabase
     {
 
     }

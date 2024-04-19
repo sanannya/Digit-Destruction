@@ -12,46 +12,14 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
                TextColor="white"/>
-        
+
         <Entry x:Name="EntryValue"
-               Placeholder="Enter Text Here" 
+               Placeholder="{Binding DivProb}" 
                PlaceholderColor="white"
                Text="{Binding EntryText}"
                TextColor="white" 
                WidthRequest="300" 
                HorizontalOptions="Center" />
-
-        <Entry x:Name="EntryValue"
-               Placeholder="Enter Text Here" 
-               PlaceholderColor="white"
-               Text="{Binding EntryText}"
-               TextColor="white" 
-               WidthRequest="300" 
-               HorizontalOptions="Center" />
-
-        <Entry x:Name="EntryValue"
-               Placeholder="Enter Text Here" 
-               PlaceholderColor="white"
-       Text="{Binding EntryText}"
-       TextColor="white" 
-       WidthRequest="300" 
-       HorizontalOptions="Center" />
-
-        <Entry x:Name="EntryValue"
-       Placeholder="Enter Text Here" 
-       PlaceholderColor="white"
-       Text="{Binding EntryText}"
-       TextColor="white" 
-       WidthRequest="300" 
-       HorizontalOptions="Center" />
-
-        <Entry x:Name="EntryValue"
-       Placeholder="Enter Text Here" 
-       PlaceholderColor="white"
-       Text="{Binding EntryText}"
-       TextColor="white" 
-       WidthRequest="300" 
-       HorizontalOptions="Center" />
 
         <BoxView HeightRequest="3"
                  BackgroundColor="#000000" 
