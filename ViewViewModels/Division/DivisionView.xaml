@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DigitDestruction.ViewViewModels.Main.Division.DivisionView"
              Title="{Binding Title}">
+    
+    
 
     <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="black">
 
@@ -12,6 +14,8 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
                TextColor="white"/>
+
+ 
 
         <Entry x:Name="EntryValue"
                Placeholder="{Binding DivProb}" 

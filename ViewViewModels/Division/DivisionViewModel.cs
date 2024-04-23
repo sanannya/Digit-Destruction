@@ -62,15 +62,18 @@ namespace DigitDestruction.ViewViewModels.Main.Division
 
         public string DivProb
         {
+
             get
             {
                 return _divProb;
             }
             set
             {
+                List<string> problems = new List<string> { "10/2" , "12/3" , "20/5" };
                 var random = new Random();
-                int index = random.Next(Problems.GetDivProbs().Count);
-                string _divProb = Problems.GetDivProbs()[index].getProbText;
+                int index = random.Next(problems.Count);
+                string _divProb = problems[index];
+
             }
         }
     }
