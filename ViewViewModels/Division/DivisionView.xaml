@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DigitDestruction.ViewViewModels.Main.Division.DivisionView"
              Title="{Binding Title}">
-    
-    
+
+
 
     <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="black">
 
@@ -14,11 +14,13 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
                TextColor="white"/>
-
- 
+        <Label Text="{Binding Value, Source={x:Reference Prob}}"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center" 
+       TextColor="white"/>
 
         <Entry x:Name="EntryValue"
-               Placeholder="{Binding DivProb}" 
+               Placeholder="Enter Answer Here" 
                PlaceholderColor="white"
                Text="{Binding EntryText}"
                TextColor="white" 
@@ -28,7 +30,7 @@
         <BoxView HeightRequest="3"
                  BackgroundColor="#000000" 
                  WidthRequest="300" />
-        
+
         <Button Text="Go To Results Page" 
                 HorizontalOptions="Center" 
                 FontAttributes="Bold,Italic" 
@@ -38,5 +40,5 @@
                 Command="{Binding OnEntryClicked}" />
 
     </StackLayout>
-    
+
 </ContentPage>

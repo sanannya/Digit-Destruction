@@ -13,7 +13,7 @@ using System.Windows.Input;
 
 namespace DigitDestruction.ViewViewModels.Main
 {
-    public class MainViewModel: BaseViewModel
+    public class MainViewModel : BaseViewModel
     {
         public string TitleAddition { get; set; } = TitlesMain.AdditionTitle;
         public string TitleSubtraction { get; set; } = TitlesMain.SubtractionTitle;

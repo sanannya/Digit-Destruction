@@ -18,12 +18,18 @@ namespace DigitDestruction.ViewViewModels.Main.Division
 
         private string _entryText;
 
-        private string _divProb;
+        public string _divProb;
 
         public DivisionViewModel()
         {
             Title = TitlesDivision.DivisionPageTitle;
             OnEntryClicked = new Command(OnEntryClickedAsync);
+
+            var random = new Random();
+            int d1 = random.Next(9);
+            int d2 = random.Next(9);
+            _divProb = d1 + " / " + d2 + " = ?";
+            Prob = _divProb;
         }
 
         public string EntryText
@@ -56,23 +62,6 @@ namespace DigitDestruction.ViewViewModels.Main.Division
             get
             {
                 return ImageSource.FromFile("Images/logo.PNG");
-
-            }
-        }
-
-        public string DivProb
-        {
-
-            get
-            {
-                return _divProb;
-            }
-            set
-            {
-                List<string> problems = new List<string> { "10/2" , "12/3" , "20/5" };
-                var random = new Random();
-                int index = random.Next(problems.Count);
-                string _divProb = problems[index];
 
             }
         }
