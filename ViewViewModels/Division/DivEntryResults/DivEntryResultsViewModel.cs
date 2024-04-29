@@ -11,6 +11,7 @@ namespace DigitDestruction.ViewViewModels.Division.DivEntryResults
     public class DivEntryResultsViewModel : BaseViewModel
     {
         private string _entryText;
+        private string _ansVal;
 
         public DivEntryResultsViewModel(string entryText)
         {
@@ -29,6 +30,14 @@ namespace DigitDestruction.ViewViewModels.Division.DivEntryResults
             {
                 if (_entryText != value)
                     SetProperty(ref _entryText, value);
+            }
+        }
+
+        public string ansVal
+        {
+            get
+            {
+                return "Correct!";
             }
         }
 

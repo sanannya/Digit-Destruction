@@ -35,6 +35,14 @@ namespace DigitDestruction.ViewViewModels.Main.Multiplication
             }
         }
 
+        public string MultProb
+        {
+            get
+            {
+                return "7 * 8 = ?";
+            }
+        }
+
         private async void OnEntryClickedAsync(object obj)
         {
             if (string.IsNullOrEmpty(_entryText.Trim()))

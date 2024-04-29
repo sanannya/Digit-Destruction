@@ -16,5 +16,11 @@ TextColor="white" HorizontalOptions="Center" />
         <Label Text="{Binding EntryText}" FontSize="Title" TextColor="DarkRed"
 FontAttributes="Bold" HorizontalOptions="Center" />
 
+        <Label Text="{Binding ansVal}" 
+FontSize="Title" 
+FontAttributes="Bold"
+TextColor="OrangeRed" 
+HorizontalOptions="Center" />
+
     </StackLayout>
 </ContentPage>

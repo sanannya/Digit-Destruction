@@ -24,6 +24,20 @@
                FontAttributes="Bold" 
                HorizontalOptions="Center" />
 
+        <Label Text="{Binding ansVal}" 
+FontSize="Title" 
+FontAttributes="Bold"
+TextColor="Green" 
+HorizontalOptions="Center" />
+
+        <Button Text="Back to Main Page" 
+        HorizontalOptions="Center" 
+        FontAttributes="Bold,Italic" 
+        Margin="10" 
+        TextColor="White" 
+        BackgroundColor="Blue" 
+        Command="{Binding OnBTMClicked}" />
+
     </StackLayout>
     
 </ContentPage>

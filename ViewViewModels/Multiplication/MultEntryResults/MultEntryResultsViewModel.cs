@@ -32,6 +32,14 @@ namespace DigitDestruction.ViewViewModels.Multiplication.MultEntryResults
             }
         }
 
+        public string ansVal
+        {
+            get
+            {
+                return "incorrect!";
+            }
+        }
+
         public ImageSource GetEmbImageSource
         {
             get

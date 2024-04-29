@@ -24,6 +24,12 @@
                FontAttributes="Bold" 
                HorizontalOptions="Center" />
 
+        <Label Text="{Binding ansVal}" 
+       FontSize="Title" 
+       FontAttributes="Bold"
+       TextColor="Green" 
+       HorizontalOptions="Center" />
+        
     </StackLayout>
     
 </ContentPage>

@@ -12,7 +12,12 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
                TextColor="white"/>
-        
+
+        <Label Text="{Binding AddProb}"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center" 
+       TextColor="white"/>
+
         <Entry x:Name="EntryValue" 
                Placeholder="Enter Text Here" 
                PlaceholderColor="white"
@@ -24,8 +29,8 @@
         <BoxView HeightRequest="3" 
                  BackgroundColor="#000000" 
                  WidthRequest="300" />
-        
-        <Button Text="Go To Results Page" 
+
+        <Button Text="Submit" 
                 HorizontalOptions="Center" 
                 FontAttributes="Bold,Italic" 
                 Margin="10" 

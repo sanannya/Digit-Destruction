@@ -34,6 +34,14 @@ namespace DigitDestruction.ViewViewModels.Main.Addition
             }
         }
 
+        public string AddProb
+        {
+            get
+            {
+                return "72 + 3 = ?";
+            }
+        }
+
         private async void OnEntryClickedAsync(object obj)
         {
             if (string.IsNullOrEmpty(_entryText.Trim()))

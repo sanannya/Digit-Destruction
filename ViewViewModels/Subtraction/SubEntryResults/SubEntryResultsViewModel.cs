@@ -31,6 +31,14 @@ namespace DigitDestruction.ViewViewModels.Subtraction.SubEntryResults
                     SetProperty(ref _entryText, value);
             }
         }
+
+        public string ansVal
+        {
+            get
+            {
+                return "Incorrect!";
+            }
+        }
         public ImageSource GetEmbImageSource
         {
             get

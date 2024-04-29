@@ -1,21 +1,24 @@
 ﻿using DigitDestruction.Models;
+using DigitDestruction.ViewViewModels.Main;
 using MyFirstMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace DigitDestruction.ViewViewModels.Addition.AddEntryResults
 {
     public class AddEntryResultsViewModel : BaseViewModel
     {
         private string _entryText;
-
+        public ICommand OnBTMClicked { get; }
         public AddEntryResultsViewModel(string entryText)
         {
             Title = TitlesAddition.AddEntryResultsTitle;
             _entryText = entryText;
+            OnBTMClicked = new Command(OnBTMClickedAsync);
         }
 
         public string EntryText
@@ -32,6 +35,14 @@ namespace DigitDestruction.ViewViewModels.Addition.AddEntryResults
             }
         }
 
+        public string ansVal
+        {
+            get
+            {
+                return "Correct!";
+            }
+        }
+
         public ImageSource GetEmbImageSource
         {
             get
@@ -40,5 +51,11 @@ namespace DigitDestruction.ViewViewModels.Addition.AddEntryResults
 
             }
         }
+
+        private async void OnBTMClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new MainView());
+        }
     }
-}
+    }
+

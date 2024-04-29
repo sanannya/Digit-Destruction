@@ -14,10 +14,11 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
                TextColor="white"/>
-        <Label Text="{Binding Value, Source={x:Reference Prob}}"
-       VerticalOptions="Center" 
-       HorizontalOptions="Center" 
-       TextColor="white"/>
+        
+        <Label Text="{Binding DivProb}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" 
+               TextColor="white"/>
 
         <Entry x:Name="EntryValue"
                Placeholder="Enter Answer Here" 
@@ -31,7 +32,7 @@
                  BackgroundColor="#000000" 
                  WidthRequest="300" />
 
-        <Button Text="Go To Results Page" 
+        <Button Text="Submit" 
                 HorizontalOptions="Center" 
                 FontAttributes="Bold,Italic" 
                 Margin="10" 

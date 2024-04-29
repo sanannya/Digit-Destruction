@@ -35,6 +35,14 @@ namespace DigitDestruction.ViewViewModels.Main.Subtraction
             }
         }
 
+        public string SubProb
+        {
+            get
+            {
+                return "81 - 4 = ?";
+            }
+        }
+
         private async void OnEntryClickedAsync(object obj)
         {
             if (string.IsNullOrEmpty(_entryText.Trim()))
