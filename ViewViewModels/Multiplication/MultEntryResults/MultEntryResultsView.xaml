@@ -29,6 +29,14 @@ FontSize="Title"
 FontAttributes="Bold"
 TextColor="OrangeRed" 
 HorizontalOptions="Center" />
+
+        <Button Text="Back to Main Page" 
+HorizontalOptions="Center" 
+FontAttributes="Bold,Italic" 
+Margin="10" 
+TextColor="White" 
+BackgroundColor="Blue" 
+Command="{Binding OnBTMClicked}" />
     </StackLayout>
     
 </ContentPage>

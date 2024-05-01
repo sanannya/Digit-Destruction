@@ -1,10 +1,12 @@
 ﻿using DigitDestruction.Models;
+using DigitDestruction.ViewViewModels.Main;
 using MyFirstMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace DigitDestruction.ViewViewModels.Division.DivEntryResults
 {
@@ -13,10 +15,13 @@ namespace DigitDestruction.ViewViewModels.Division.DivEntryResults
         private string _entryText;
         private string _ansVal;
 
+        public ICommand OnBTMClicked { get; }
+
         public DivEntryResultsViewModel(string entryText)
         {
             Title = TitlesDivision.DivEntryResultsTitle;
             _entryText = entryText;
+            OnBTMClicked = new Command(OnBTMClickedAsync);
         }
 
         public string EntryText
@@ -48,6 +53,11 @@ namespace DigitDestruction.ViewViewModels.Division.DivEntryResults
                 return ImageSource.FromFile("Images/logo.PNG");
 
             }
+        }
+
+        private async void OnBTMClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new MainView());
         }
     }
 }
